@@ -52,12 +52,12 @@
         $devind_date = 0;
         
         if($date_diff_count>365){
-            $devind_date = ceil(($date_diff_count)/(365/10));
+            $devind_date = ceil(($date_diff_count)/10);
         }else if($date_diff_count>30){
             $devind_date = ceil(($date_diff_count)/(30));
         }
 
-        // echo $devind_date;
+        // echo $devind_date."  ///  ".$date_diff_count;
         for ($i=0; $i < 120; $i++) { 
             if($found==0){
                 $offset = ((($devind_date))+$i) * 20;
